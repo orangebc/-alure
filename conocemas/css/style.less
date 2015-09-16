@@ -1,0 +1,602 @@
+@import url('http://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,800,300,700,900');
+
+// Colors
+@grey: #373737;
+
+// Generic classes
+
+body {
+	font-size: 16px;
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.no-space {
+	padding: 0;
+}
+
+#privacyToggled {
+	display: none;
+}
+
+//Generic styles
+
+.generic__title {
+	font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+	@media only screen and (min-width: 1200px) {
+		.generic__title {
+			font-size: 42px;
+			padding-top: 1em;
+		}	
+	}
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		.generic__title {
+			font-size: 36px;
+			padding-top: 1em;
+		}	
+	}
+
+.generic__title--white {
+	font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+	@media only screen and (min-width: 1200px) {
+		.generic__title--white {
+			font-size: 42px;
+			padding-top: 1em;
+			margin: 0;
+		}	
+	}
+
+
+.generic__subtitle {
+	text-align: center;
+	margin-bottom: 2em;
+}
+	@media only screen and (min-width: 1200px) {
+		.generic__subtitle {
+			font-size: 21px;
+		}	
+	}
+
+.generic__subtitle--white {
+	text-align: center;
+	margin-bottom: 2em;
+	color: white;
+}
+	@media only screen and (min-width: 1200px) {
+		.generic__subtitle--white {
+			font-size: 21px;
+		}	
+	}
+
+	@media only screen and (min-width: 992px) {
+		.generic__subtitle--white {
+			font-size: 18px;
+		}	
+	}
+
+	@media only screen and (min-width: 768px) {
+		.generic__subtitle--white {
+			font-size: 18px;
+		}	
+	}
+
+	@media only screen and (min-width: 480px) {
+		.generic__subtitle--white {
+			font-size: 18px;
+		}	
+	}
+
+
+
+.generic__content {
+	line-height: 2em;
+}	
+
+	@media only screen and (min-width: 1200px) {
+		.generic__content {
+			padding-top: 2em;
+			font-size: 18px;
+			line-height: 2em;
+		}
+	}
+		
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		.generic__content {
+			font-size: 16px;
+		}	
+	}	
+
+	@media only screen and (min-width: 320px) and (max-width: 479px){
+		.generic__content {
+			font-size: 14px;
+		}	
+	}
+	
+
+
+.generic__content--white {
+	line-height: 1.5em;
+	color: darken(#FFFFFF, 20%);
+}	
+
+	@media only screen and (min-width: 1200px) {
+		.generic__content--white {
+			padding-top: 2em;
+			font-size: 16px;
+			line-height: 2em;
+			text-align: justify;
+		}	
+	}
+
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		.generic__content--white {
+			font-size: 15px;
+			line-height: 2em;
+			text-align: justify;
+		}	
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		.generic__content--white {
+			font-size: 15px;
+			line-height: 2em;
+			text-align: center;
+		}	
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.generic__content--white {
+			font-size: 14px;
+			line-height: 2em;
+			text-align: center;
+		}	
+	}
+
+	@media only screen and (min-width: 320px) and (max-width: 479px) {
+		.generic__content--white {
+			font-size: 14px;
+			line-height: 2em;
+			text-align: center;
+		}	
+	}
+
+
+
+.generic__image {
+	width: 100%;
+	height: auto;
+}
+
+.generic__separator {
+	border: none;
+	background-color: @grey;
+	outline: none;
+	height: 3px;
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.generic__separator--white {
+		border: none;
+		background-color: white;
+		outline: none;
+		height: 3px;
+		width: 60px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+// Header 
+
+.header {
+	background-color: @grey;
+	position: relative;
+}
+	@media only screen and (min-width: 1200px){
+		.header {
+			height: 90%;
+		}
+	}
+	.header__logo {
+		text-align: center;
+		padding: .5em;
+		img {
+			width: 200px;
+		}
+	}
+	.header__block {
+		text-align: center;
+		padding-top: 2em;
+		border-right: 1px solid lighten(@grey, 10%);
+		height: 90px;
+		display: block;
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		.header__block {
+			border: 0;
+		}
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.header__block {
+			border: 0;
+		}
+	}
+
+	@media only screen and (min-width: 320px) and (max-width: 479px) {
+		.header__block {
+			border: 0;
+		}
+	}
+
+	.header__content {
+		color: white;
+	}
+	.header__button {
+		background-color: transparent;
+		color: white;
+		width: 100%;
+		text-transform: uppercase;
+		border: none;
+		outline: none;
+	}
+
+
+// Main
+
+.main {
+	display: none;
+	position: absolute;
+	top: 90px;
+	right: 50px;
+	background-color: rgba( 55, 55, 55, .8);
+	z-index: 50;
+	width: 450px;
+	padding: 1em;
+}
+	
+	@media only screen and (min-width: 1200px){
+		.main {
+			position: absolute;
+			top: 90px;
+			right: 50px;
+		}
+	}	
+	@media only screen and (min-width: 992px) and (max-width: 1199px){
+		.main {
+			right: 0;
+		}
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+		.main {
+			top: 171px;
+			left: 50%;
+			margin-left: -225px;
+		}
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px){
+		.main {
+			top: 351px;
+			width: 100%;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	@media only screen and (min-width: 320px) and (max-width: 479px){
+		.main {
+			top: 351px;
+			width: 100%;
+			left: 0;
+			right: 0;
+		}
+	}
+	.main__form {
+		padding: 1em;
+		text-align: center;
+		label {
+			color: white;
+			text-transform: uppercase;
+			font-weight: 300;
+			padding: 12px 0;
+		}
+		input {
+			border-radius: 0;
+			background-color: transparent !important;
+			padding: 16px;
+			height: 50px;
+		}
+	}
+	
+	.main__btn {
+		background-color: transparent;
+		color: white;
+		font-size: 16px;
+		width: 100%;
+		padding: 1em 0;
+		text-transform: uppercase;
+		margin-top: 1em;
+		transition: all .4s ease-in;
+		&:hover {
+			background-color: darken(@grey, 10%);
+			color: white;
+			border: none;
+		}
+	}
+
+	.main__close {
+		margin-top: 2em;
+		color: darken(#FFF, 45%);
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 14px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+// Smart Living 
+
+.smartLiving {
+	overflow: hidden;
+}
+
+	@media only screen and (min-width: 1200px){
+		.smartLiving__content {
+			padding: 3em 5em;
+		}
+	}
+
+	@media only screen and (min-width: 992px) and (max-width: 1199px){
+		.smartLiving__content {
+			h2.generic__title {
+				padding-top: 0;
+			}
+		}
+		.smartLiving__content {
+			padding: 2em;
+		}
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+		.smartLiving__content {
+			padding: 2em;
+			text-align: justify;
+		}
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 767px){
+		.smartLiving__content {
+			padding: 2em;
+			text-align: justify;
+		}
+	}
+
+	@media only screen and (min-width: 320px) and (max-width: 479px) {
+		.smartLiving__content {
+			padding: 1em;
+			text-align: justify;
+		}
+	}
+
+.smartLiving__image {
+	width: 100%;
+}
+
+// Exceptionals
+
+.exceptionals {
+	padding-top: 3em;
+	hr.generic__separator {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+}
+
+	@media only screen and (min-width: 1200px){
+		.exceptionals {
+			padding: 6em 0;
+			hr.generic__separator {
+				margin-top: 5em;
+				margin-bottom: 5em;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 992px) and (max-width: 1199px){
+		.exceptionals {
+			padding: 1em 0;
+			h2.generic__title {
+				padding-top: 0;
+			}
+		}
+	}
+
+// Amenities
+
+.amenities {
+	background-color: @grey;
+}
+
+	.amenities__image {
+		position: relative;
+		figcaption {
+			background-color: rgba( 55, 55, 55, .8);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			color: white;
+			font-size: 16px;
+			text-align: center;
+			padding: 1em 0;
+		}
+	}
+	.amenities__ny,
+	.amenities__apartments {
+		text-align: center;
+	}
+
+		@media only screen and (min-width: 1200px){
+			.amenities__ny,
+			.amenities__apartments {
+				padding: 12em 5em;
+			}
+			.amenities__apartments {
+				h2.generic__title--white {
+					padding-top: 2em;
+				}
+			}
+		}
+
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			.amenities__ny--logo {
+				padding: .5em 1em;
+				img {
+					width: 120px;
+				}
+			}
+			.amenities__ny,
+			.amenities__apartments {
+				padding: 1em 2em;
+			}
+			.amenities__apartments {
+				h2.generic__title--white {
+					padding-top: 1em;
+				}
+			}
+		}
+
+		@media only screen and (min-width: 768px) and (max-width: 992px) {
+			.amenities__ny--logo {
+				padding: 1.5em 1em;
+				img {
+					width: 180px;
+				}
+			}
+			.amenities__ny {
+				overflow: hidden;
+			}
+			.amenities__ny,
+			.amenities__apartments {
+				padding: 2em;
+			}
+		}
+
+		@media only screen and (min-width: 480px) and (max-width: 767px) {
+			.amenities__ny--logo {
+				padding: 1.5em 1em;
+				img {
+					width: 160px;
+				}
+			}
+			.amenities__ny {
+				overflow: hidden;
+			}
+			.amenities__ny,
+			.amenities__apartments {
+				padding: 2em;
+			}
+		}
+
+		@media only screen and (min-width: 320px) and (max-width: 479px) {
+			.amenities__ny--logo {
+				padding: 1.5em 1em;
+				img {
+					width: 140px;
+				}
+			}
+			.amenities__ny {
+				overflow: hidden;
+			}
+			.amenities__ny,
+			.amenities__apartments {
+				padding: 1em;
+			}
+		}
+
+// Apartments 
+
+.apartments {
+	padding: 2em 0;
+}
+
+	@media only screen and (min-width: 1200px){
+		.apartments {
+			padding: 4em 0;
+		}
+		.apartments {
+			hr.generic__separator {
+				margin-top: 5em;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+
+	@media only screen and (min-width: 320px) and (max-width: 479px){
+		.apartments {
+			padding: 1em;
+		}
+	}
+
+	.apartments__title {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+
+// Logos
+
+.logos {
+	padding: 2em 0;
+}
+
+	@media only screen and (min-width: 320px) and (max-width: 479px){
+		.logos {
+			ul {
+				padding: 0;
+			}
+			ul li {
+				padding: 0;
+			}
+		}
+	}
+// Map
+
+.map {
+	width: 100%;
+	min-height: 400px;
+}
+
+// Footer
+
+.footer {
+	background-color: @grey;
+	padding: 2em 0;
+	.generic__info {
+		color: white;
+	}
+}
+
+	.footer__info,
+	.footer__privacy {
+		color: white;
+	}
+
+	.footer__privacy {
+		font-weight: 600;
+		text-transform: uppercase;
+		&:hover {
+			cursor: pointer;
+		}
+	}

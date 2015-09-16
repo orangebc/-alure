@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[NY 290]]></data>
+
+
+  <data name="en_panogroup78_title"><![CDATA[Áreas comunes]]></data>
+
+  <data name="en_pano77_title"><![CDATA[Alberca]]></data>
+  <data name="en_pano47_title"><![CDATA[Gym]]></data>
+  <data name="en_pano49_title"><![CDATA[Recepcion]]></data>
+  <data name="en_pano16_title"><![CDATA[Tienda]]></data>
+  <data name="en_pano27_title"><![CDATA[Semisotano 1]]></data>
+  <data name="en_pano28_title"><![CDATA[Semisotano 2]]></data>
+  <data name="en_pano153_title"><![CDATA[Terraza]]></data>
+
+
+
+
+
+
+  <data name="en_logowebsiteurl"><![CDATA[http://www.macro-pano.com]]></data>
+  <data name="en_logotooltipText"><![CDATA[Hecho por Macro Pano]]></data>
+
+
+
+
+
+
+
+
+
+</krpano>

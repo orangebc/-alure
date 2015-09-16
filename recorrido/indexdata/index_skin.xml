@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.17">
+
+  <!-- ******************** -->
+  <!-- Combobox : panoramas -->
+  <!-- ******************** -->
+
+
+<events name="combopanolistallpanoramasStartTourEvents" onTourStart="set(layer[combopanolistallpanoramas].isStarted, true);if(layer[combopanolistallpanoramas].isLoaded,combopanolistallpanoramasShow(););" keep="true" />
+
+
+  <layer name="combopanolistallpanoramas"
+         url="%FIRSTXML%/graphics/combobox.swf"
+         alturl="%FIRSTXML%/graphics/combobox.js"
+         keep="true"
+         visible="false"
+         zorder="0"
+         align="bottomleft"
+         x="10" y="10"
+         rowcount="10"
+         onloaded="combopanolistallpanoramasLoaded();"
+         isStarted="false"
+         isLoaded="false"
+         itemcount="0"
+         />
+
+  <action name="combopanolistallpanoramasLoaded">
+    
+    layer[combopanolistallpanoramas].removeAll();
+    set(layer[combopanolistallpanoramas].itemcount, 0);
+    
+    combopanolistallpanoramasAddItem(pano77_title, pano77, pano77, false);
+    combopanolistallpanoramasAddItem(pano47_title, pano47, pano47, false);
+    combopanolistallpanoramasAddItem(pano49_title, pano49, pano49, false);
+    combopanolistallpanoramasAddItem(pano16_title, pano16, pano16, false);
+    combopanolistallpanoramasAddItem(pano27_title, pano27, pano27, false);
+    combopanolistallpanoramasAddItem(pano28_title, pano28, pano28, false);
+    combopanolistallpanoramasAddItem(pano153_title, pano153, pano153, false);
+    set(layer[combopanolistallpanoramas].isLoaded, true);
+    
+    if(layer[combopanolistallpanoramas].isStarted,
+      combopanolistallpanoramasShow();
+    );
+  </action>
+
+
+  <action name="combopanolistallpanoramasAddItem">
+    getmessage(caption, %1);
+    
+    indexoftxt(found, get(caption), '&amp;');
+    if(found GE 0,
+      subtxt(part1, get(caption), 0, get(found));
+      add(found, 5);
+      subtxt(part2, get(caption), get(found), get(caption.length));
+      txtadd(caption, get(part1), '&amp;', get(part2));
+    );
+    if(%4,
+      txtadd(title, "&#x00A0;&#x00A0;&#x00A0;", get(caption));
+    ,
+      set(title, get(caption));
+    );
+    layer[combopanolistallpanoramas].addIdItem(%2, get(title), mainloadscene(%3));
+    inc(layer[combopanolistallpanoramas].itemcount);
+  </action>
+
+  <events name="combopanolistallpanoramasEvents"
+          onnewpano="combopanolistallpanoramasOnPanorama();"
+          keep="true"/>
+
+  <action name="combopanolistallpanoramasHide">
+    set(layer[combopanolistallpanoramas].visible, false);
+  </action>
+  <action name="combopanolistallpanoramasShow">
+  if(layer[combopanolistallpanoramas].isLoaded,
+    if (layer[combopanolistallpanoramas].itemcount GT 0,
+      set(layer[combopanolistallpanoramas].visible, true);
+    ,
+      set(layer[combopanolistallpanoramas].visible, false);
+    );
+  ,
+    set(layer[combopanolistallpanoramas].visible, false);
+  );
+  </action>
+
+  <action name="combopanolistallpanoramasOnPanorama">
+    combopanolistallpanoramasUpdateList();
+  </action>
+
+
+  <action name="combopanolistallpanoramasUpdateList">
+    set(itemtoselect, get(scene[get(xml.scene)].name));
+    layer[combopanolistallpanoramas].selectIdItem(get(itemtoselect));
+  </action>
+
+
+  <!-- ************ -->
+  <!-- Logo : viewport / topleft -->
+  <!-- ************ -->
+
+
+  <layer align="topleft"
+         x="10"
+         y="10"
+         zorder="1"
+         name="logo"
+         keep="true"
+         visible="false"
+         capture="false"
+		
+			tooltip="logotooltipText"
+			onhover="showTooltip(topleft);"
+			onout="hideTooltip();"
+         url="%FIRSTXML%/graphics/logo/poweredby.png" 
+         onclick="openurl(http://www.macro-pano.com,_blank);"
+
+         height="6%"
+         width="10%"
+
+         />
+
+  <events name="logoevents" 
+    onTourStart="showlogo();"
+    keep="true" />
+
+  <action name="hidelogo">
+    set(layer[logo].visible, false);
+  </action>
+  <action name="showlogo">
+      set(layer[logo].visible, true);
+  </action>
+
+
+
+
+
+</krpano>

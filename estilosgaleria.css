@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    img {
+	width: 100%;
+	max-width: auto;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+@media only screen and (max-width: 2560px) {
+.cont4 {
+	float: left;
+	height: auto;
+	width: 100%;
+	margin-top: 70px;
+	background-color: #FFF;
+}
+.zkcconstructora{
+	float: none;
+	height: auto;
+	width: 20%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 80px;
+}
+h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 2.8em;
+	text-align: center;
+	font-weight: lighter;
+	float: left;
+	height: auto;
+	width: 100%;
+	margin-top: 60px;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: #333;
+	text-align: center;
+	font-weight: 400;
+	float: left;
+	height: auto;
+	width: 100%;
+	margin-bottom: 10px;
+}
+article{
+	float: left;
+	height: auto;
+	width: 33.25%;
+	padding-top: 160px;
+	text-align: left;
+}
+article#galeria{
+	margin-right: 33%;
+	margin-left: 33.5%;
+	padding-bottom: 40px;
+	margin-top: 0px;
+	padding-top: 0px;
+	height: auto;
+	background-color: #FFF;
+}
+.bloque{
+	float: left;
+	height: auto;
+	width: 33.33%;
+}
+.bloque1{
+	float: left;
+	height: auto;
+	width: 100%;
+}
+.box1{
+	float: left;
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+.box2{
+	float: left;
+	height: auto;
+	width: 50%;
+	position: relative;
+}
+.titulo{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	color: #FFF;
+	text-align: center;
+	font-weight: 400;
+	float: left;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: absolute;
+	z-index: 111111;
+	background-color: rgba(0,0,0,0.7);
+	bottom: auto;
+	height: auto;
+}
+
+}
+@media only screen and (max-width: 1920px) {
+}
+@media only screen and (max-width: 1680px) {
+.zkcconstructora{
+	width: 25%;
+	margin-top: 20px;
+}	
+article{
+	width: 33.3%;
+}	
+}
+@media only screen and (max-width: 1600px) {
+	.zkcconstructora{
+	width: 25%;
+	margin-top: 0px;
+}
+article{
+	width: 33.3%;
+}
+}
+@media only screen and (max-width: 1440px) {
+article{
+	width: 33.3%;
+	padding-top: 100px;
+}	
+h1  {
+	font-family: 'Playfair Display', serif;
+	font-size: 2.8em;
+	margin-top: 60px;
+}
+h2 {
+	font-size: 1em;
+	margin-bottom: 50px;
+}
+}
+@media only screen and (max-width: 1366px) {
+article{
+	width: 33.33%;
+	padding-top: 70px;
+}
+}
+@media only screen and (max-width: 1280px) {
+article{
+	width: 33.33%;
+	padding-top: 70px;
+}
+}
+@media only screen and (max-width: 1024px) {
+	.zkcconstructora{
+	width: 15%;
+	margin-top: 120px;
+}	
+article{
+	width: 42%;
+	padding-top: 70px;
+}
+article#galeria{
+	margin-left: 29%;
+}
+}
+@media only screen and (max-width: 960px) {	
+article{
+	width: 50%;
+	padding-top: 70px;
+}	
+}
+@media only screen and (max-width: 800px) {
+article{
+	width: 60%;
+	padding-top: 70px;
+}
+article#galeria{
+	width: 70%;
+	margin-left: 15%;
+	float: left;
+	height: auto;
+	background-color: #FFF;
+}
+.bloque, .bloque1, .box2 {
+	width: 100%;
+	height: auto;
+}
+}
+@media only screen and (max-width: 768px) {
+	.zkcconstructora{
+	float: none;
+	height: auto;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 130px;
+}
+article#galeria{
+	width: 70%;
+	margin-left: 15%;
+	float: left;
+	height: auto;
+	padding-top: 80px;
+}
+.cont4 {
+	margin-top: 0px;
+}
+}
+@media only screen and (max-width: 600px) {	
+.cont4 {
+	margin-top: 0px;
+}
+article{
+	width: 100%;
+	padding-top: 0px;
+}
+article#galeria{
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	height: auto;
+}
+}
+@media only screen and (max-width: 540px) {	
+		.zkcconstructora{
+	width: 30%;
+	margin-top: 40px;
+}
+}
+@media only screen and (max-width:360px) {
+	
+article#galeria{
+	width: 100%;
+	margin-left: 0%;
+	float: left;
+	height: auto;
+}
+h2{
+	font-size: 0.9em;
+}
+}
+@media only screen and (max-width:320px) {
+h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 2.2em;
+	margin-top: 60px;
+}
+}
